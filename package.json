@@ -1,0 +1,47 @@
+{
+  "name": "homebase-family-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HOMEBASE — Intelligent Private Family Operating System (Offline-First, Zero-Location)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "node tests/run_all_tests.mjs",
+    "audit:privacy": "node tests/run_all_tests.mjs --audit-only",
+    "cap:sync": "cap sync",
+    "cap:android": "cap open android",
+    "cap:ios": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "6.1.2",
+    "@capacitor/app": "6.0.1",
+    "@capacitor/core": "6.1.2",
+    "@capacitor/filesystem": "6.0.1",
+    "@capacitor/ios": "6.1.2",
+    "@capacitor/local-notifications": "6.1.0",
+    "@capacitor/preferences": "6.0.2",
+    "@capacitor/share": "6.0.2",
+    "@supabase/supabase-js": "2.45.4",
+    "idb": "8.0.0",
+    "lucide-react": "0.446.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.26.2",
+    "recharts": "2.12.7",
+    "zod": "3.23.8",
+    "zustand": "4.5.5"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.1.2",
+    "@types/react": "18.3.8",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.6.2",
+    "vite": "5.4.8"
+  }
+}
